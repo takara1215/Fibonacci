@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println(fibonacci(5));
+        System.out.println("Please enter number");
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        System.out.println(fibonacci(N));
     }
 
     static int fibonacci(int N ){
